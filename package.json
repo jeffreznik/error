@@ -1,0 +1,18 @@
+{
+  "name": "error",
+  "version": "0.1.0",
+  "description": "A collection of typed error subclasses with additional type-specific properties",
+  "main": "./dist/errors.js",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "prepublish": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeff Reznik",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-builtin-extend": "^1.1.2",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
