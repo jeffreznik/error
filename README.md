@@ -38,7 +38,7 @@ Prepend another error message to the beginning of the message stack.  Useful for
 
 Returns: itself
 
--
+---
 
 ### AuthorizationError extends GeneralError
 
@@ -50,7 +50,7 @@ Returns: itself
 
 *none*
 
--
+---
 
 ### HttpError extends GeneralError
 
@@ -67,7 +67,7 @@ Note: the constructor expects the additional properties below to be set in `erro
 * `status` (Number) - HTTP status code
 * `statusText` (String) - HTTP status message
 
--
+---
 
 ### NotFoundError extends GeneralError
 
@@ -79,7 +79,7 @@ Note: the constructor expects the additional properties below to be set in `erro
 
 *none*
 
--
+---
 
 ### ValidationError extends GeneralError
 
@@ -91,4 +91,4 @@ Note: the constructor expects the additional properties below to be set in `erro
 
 * `attributeErrors` (Object) - key-value pairs of offending attributes and their error messages
 
--
+---
