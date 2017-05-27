@@ -1,5 +1,5 @@
 {
-  "name": "error",
+  "name": "@jeffreznik/error",
   "version": "0.1.0",
   "description": "A collection of typed error subclasses with additional type-specific properties",
   "main": "./dist/errors.js",
