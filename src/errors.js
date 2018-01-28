@@ -33,14 +33,21 @@ export class AuthorizationError extends GeneralError {
   }
 }
 
+export class ConflictError extends GeneralError {
+  constructor(message = '', errorBelow) {
+    super(message, errorBelow)
+    this.name = 'ConflictError'
+  }
+}
+
 export class HttpError extends GeneralError {
   constructor(message = '', errorBelow) {
     super(message, errorBelow)
     this.name = 'HttpError'
-    this.data = errorBelow.data
-    this.headers = errorBelow.headers
-    this.status = errorBelow.status
-    this.statusText = errorBelow.statusText
+    this.data = errorBelow.response.data
+    this.headers = errorBelow.response.headers
+    this.status = errorBelow.response.status
+    this.statusText = errorBelow.response.statusText
   }
 }
 
